@@ -1,0 +1,29 @@
+/* Update background color to a colorful gradient */
+.App {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffcc00, #ff6699, #66ff66); /* You can adjust the gradient colors */
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Remove the spinning animation for the logo */
+.App-logo {
+  height: 40vmin;
+}
+
+/* Styles for the header section */
+.App-header {
+  background-color: rgba(0, 0, 0, 0.5); 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Styles for links */
+.App-link {
+  color: #61dafb;
+}
