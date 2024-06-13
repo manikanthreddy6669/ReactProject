@@ -1,20 +1,13 @@
 import React from 'react';
 import './BlogPost.css';
-
-const BlogPost = ({ title, id, student, image, children }) => {
-    return (
-        <div className="blog-post">
-            <h2>{title}</h2>
-            <div className="post-meta">
-                <h3><span>{id}</span> | <span>{student}</span></h3>
-            </div>
-            {image && <img src={image} alt={title} className="post-image" />}
-            <div className="post-content">
-                {children}
-            </div>
-            <hr />
-        </div>
-    );
-};
-
+function BlogPost({ post }) {
+  return (
+    <div className="blog-post">
+      <h2>{post.title}</h2>
+      <h2>{post.id}</h2>
+      <h2>{post.studentname}</h2>
+      {post.image && <img src={post.image} alt={post.title} className="post-image" />}
+    </div>
+  );
+}
 export default BlogPost;

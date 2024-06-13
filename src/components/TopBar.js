@@ -1,9 +1,10 @@
 import React from 'react';
 import './TopBar.css';
 
-const TopBar = () => {
+function TopBar({ title }) {
     return (
         <div className="top-bar">
+                <h1>{title}</h1>
             <div className="logo">My Portfolio</div>
             <nav>
                 <a href="#home">Home</a>
